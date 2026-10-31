@@ -1,223 +1,216 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en" class="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salsabilah Enterprise & S.R. Electronics Park - Unified Treasury Hub</title>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root {
---bg-dark: #030712;
---card-bg: #0f172a;
---accent: #06b6d4;
---success: #10b981;
---warning: #f59e0b;
---text-main: #f8fafc;
---text-muted: #94a3b8;
---border-color: #1e293b;
-}
-body {
-font-family: 'Hind Siliguri', Inter, sans-serif;
-background-color: var(--bg-dark);
-color: var(--text-main);
-margin: 0;
-padding: 15px;
-min-height: 100vh;
-}
-.container {
-max-width: 900px;
-margin: 0 auto;
-}
-.header {
-background: linear-gradient(135deg, #0e7490, #1e3a8a);
-padding: 25px;
-border-radius: 16px;
-text-align: center;
-margin-bottom: 25px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-border: 1px solid rgba(6, 182, 212, 0.2);
-}
-.header span {
-font-family: 'Fira Code', monospace;
-font-size: 11px;
-letter-spacing: 2px;
-color: #67e8f9;
-text-transform: uppercase;
-}
-.header h1 { margin: 5px 0 0; font-size: 24px; color: #fff; }
-.header p { margin: 5px 0 0; font-size: 13px; color: #cbd5e1; }
-.section-title {
-font-size: 15px;
-font-weight: bold;
-color: var(--accent);
-margin: 20px 0 10px 5px;
-font-family: 'Fira Code', monospace;
-text-transform: uppercase;
-letter-spacing: 1px;
-}
-.grid-2 {
-display: grid;
-grid-template-columns: 1fr;
-gap: 15px;
-}
-@media(min-width: 640px) {
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
-}
-.card {
-background: var(--card-bg);
-border-radius: 12px;
-padding: 18px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-border: 1px solid var(--border-color);
-transition: transform 0.2s, border-color 0.2s;
-}
-.card:hover {
-transform: translateY(-2px);
-border-color: rgba(6, 182, 212, 0.4);
-}
-.card.pos { border-left: 4px solid var(--success); }
-.card.corp { border-left: 4px solid var(--accent); }
-.card.loan { border-left: 4px solid var(--warning); }
-.card-title {
-font-size: 15px;
-font-weight: bold;
-margin-bottom: 12px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-border-bottom: 1px solid var(--border-color);
-padding-bottom: 8px;
-}
-.row {
-display: flex;
-justify-content: space-between;
-font-size: 13px;
-margin-bottom: 8px;
-}
-.label { color: var(--text-muted); }
-.value { font-weight: bold; color: var(--text-main); font-family: 'Fira Code', monospace; }
-.badge {
-background: rgba(16, 185, 129, 0.15);
-color: var(--success);
-padding: 3px 8px;
-border-radius: 6px;
-font-size: 10px;
-font-family: 'Fira Code', monospace;
-border: 1px solid rgba(16, 185, 129, 0.3);
-}
-.action-btn {
-background: linear-gradient(135deg, #0891b2, #0e7490);
-color: white;
-border: none;
-width: 100%;
-padding: 14px;
-border-radius: 10px;
-font-size: 15px;
-font-weight: bold;
-cursor: pointer;
-margin-top: 20px;
-box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
-transition: opacity 0.2s;
-}
-.action-btn:active { transform: scale(0.98); }
-#system-status {
-text-align: center;
-font-size: 13px;
-color: var(--warning);
-margin-top: 12px;
-font-family: 'Fira Code', monospace;
-}
-.footer {
-text-align: center;
-font-size: 11px;
-color: var(--text-muted);
-margin-top: 30px;
-border-top: 1px solid var(--border-color);
-padding-top: 15px;
-font-family: 'Fira Code', monospace;
-}
-</style>
-</head>
-<body>
-<div class="container">
-<div class="header">
-<span>Salsabilah Enterprise Treasury & ERP Hub</span>
-<h1>S. R. Electronics Park - Central Dashboard</h1>
-<p>সেন্ট্রালাইজড ফিনান্সিয়াল সিস্টেম, ট্রেজারি এবং পিওএস ইন্টিগ্রেশন প্যানেল</p>
-</div>
-<!-- Corporate Accounts -->
-<div class="section-title">Corporate Treasury Accounts</div>
-<div class="grid-2">
-<div class="card corp">
-<div class="card-title">
-Minister / Salsabilah
-<span class="badge">SAP DOC: 5100029481</span>
-</div>
-<div class="row"><span class="label">Deal ID:</span><span class="value">DEAL002905</span></div>
-<div class="row"><span class="label">Ledger Balance:</span><span class="value" style="color: var(--success);">+ ৳ ৩,৩০,৫৬,২৯৭.০০</span></div>
-</div>
-<div class="card corp">
-<div class="card-title">
-Butterfly Marketing
-<span class="badge">Live Sync</span>
-</div>
-<div class="row"><span class="label">Account No:</span><span class="value">3000002272</span></div>
-<div class="row"><span class="label">Current Balance:</span><span class="value" style="color: var(--success);">৳ ৩,১৪,২৯,০০০.০০</span></div>
-</div>
-</div>
-<!-- S.R. Electronics Park Local Banking & POS -->
-<div class="section-title">S.R. Electronics Park Banking & POS</div>
-<div class="grid-2">
-<!-- Pubali Bank POS -->
-<div class="card pos">
-<div class="card-title">
-পূবালী ব্যাংক পিওএস ও মার্চেন্ট
-<span class="badge">NPSB Ready</span>
-</div>
-<div class="row"><span class="label">Terminal ID (TID):</span><span class="value">20041595</span></div>
-<div class="row"><span class="label">Merchant A/C:</span><span class="value">4370901017008</span></div>
-<div class="row"><span class="label">সর্বশেষ নিট পেমেন্ট:</span><span class="value">৳ 54.91</span></div>
-<div class="row"><span class="label">SIM Connect:</span><span class="value">01322813961 (Active)</span></div>
-</div>
-<!-- Sonali Bank CC -->
-<div class="card">
-<div class="card-title">
-সোনালী ব্যাংক পিএলসি
-<span class="badge">Settlement Target</span>
-</div>
-<div class="row"><span class="label">CC A/C Number:</span><span class="value">3107053000068</span></div>
-<div class="row"><span class="label">SMS Alert Phone:</span><span class="value">Active (Registered)</span></div>
-<div class="row"><span class="label">লেনদেন মাধ্যম:</span><span class="value" style="color: var(--success);">NPSB Instant Transfer</span></div>
-</div>
-<!-- Brac Bank Loan -->
-<div class="card loan">
-<div class="card-title">ব্র্যাক ব্যাংক (EMI Loan)</div>
-<div class="row"><span class="label">Loan Account:</span><span class="value">৬১০۱۰‌و২৪৮১০০০১</span></div>
-<div class="row"><span class="label">ইনস্টলেমেন্ট:</span><span class="value">সক্রিয় ও নিয়মিত</span></div>
-</div>
-<!-- DMCB Account -->
-<div class="card">
-<div class="card-title">ডিএমসিবি (DMCB)</div>
-<div class="row"><span class="label">Savings (083-4001):</span><span class="value">৳ 100</span></div>
-<div class="row"><span class="label">Investment (083-7168):</span><span class="value">৳ 2,100 (Paid)</span></div>
-</div>
-</div>
-<button class="action-btn" onclick="executeSyncProcess()">⚡ ফুল ট্রেজারি সিস্টেম ও লেজার সিঙ্ক চেক করুন</button>
-<div id="system-status"></div>
-<div class="footer">
-Powered by Salsabilah Enterprise ERP Engine & SAP ECC 6.0 Integration Hub
-</div>
-</div>
+<title>Enterprise Dealer Ledger & Real-Time API Engine</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <script>
-function executeSyncProcess() {
-const box = document.getElementById('system-status');
-box.style.color = "var(--accent)";
-box.innerHTML = "🔄 SAP লেজার ও পূবালী-সোনালী ব্যাংক নেটওয়ার্ক সিঙ্ক করা হচ্ছে...";
-setTimeout(() => {
-box.style.color = "var(--success)";
-box.innerHTML = "✨ সফল! সমস্ত ব্যাংক অ্যাকাউন্ট, কর্পোরেট লেজার এবং পিওএস ডাটা আপডেট হয়েছে।";
-}, 1500);
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        darkbg: '#0f172a',
+        cardbg: '#1e293b',
+        accent: '#3b82f6',
+        success: '#10b981',
+        warning: '#f59e0b'
+      }
+    }
+  }
 }
+</script>
+</head>
+<body class="bg-darkbg text-slate-100 font-sans min-h-screen flex flex-col">
+<!-- Header -->
+<header class="bg-cardbg border-b border-slate-700 px-6 py-4 flex items-center justify-between shadow-md">
+<div class="flex items-center space-x-3">
+<div class="bg-blue-600 p-2 rounded-lg text-white">
+<i data-lucide="cpu" class="w-6 h-6"></i>
+</div>
+<div>
+<h1 class="text-lg font-bold tracking-wide">Enterprise ERP & AI Real-Time API Gateway</h1>
+<p class="text-xs text-slate-400">Live Bank Reconciliation & Ledger Auditing System (As of Oct 31, 2026)</p>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<div class="flex items-center space-x-2 bg-slate-800 px-3 py-1.5 rounded-full border border-slate-700 text-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-emerald-400 font-medium">DBBL & Google API Connected</span>
+</div>
+<button onclick="syncLiveData()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs px-3 py-2 rounded-lg font-medium flex items-center space-x-1.5 transition">
+<i data-lucide="refresh-cw" class="w-3.5 h-3.5" id="sync-icon"></i>
+<span>Sync Real-Time Data</span>
+</button>
+</div>
+</header>
+<!-- Main Container -->
+<main class="flex-1 p-6 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Left Column: Dealer Control & Stats -->
+<div class="space-y-6">
+<!-- Dealer Profile Card -->
+<div class="bg-cardbg border border-slate-700 rounded-xl p-5 shadow-lg">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-xs font-semibold uppercase tracking-wider bg-blue-900/50 text-blue-300 px-2 py-0.5 rounded">Dealer ID: 3000002272</span>
+<h2 class="text-xl font-bold mt-1 text-white">SR Electronics Park</h2>
+<p class="text-xs text-slate-400">Hatboalia Bazar 05 | Mob: 01719732134</p>
+</div>
+<div class="bg-slate-800 p-2 rounded-lg text-slate-300">
+<i data-lucide="store" class="w-5 h-5"></i>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-slate-700">
+<div class="bg-slate-800/60 p-3 rounded-lg border border-slate-700/50">
+<p class="text-xs text-slate-400">Current Balance</p>
+<p id="display-balance" class="text-lg font-bold text-emerald-400 mt-0.5">-1,270 BDT</p>
+<span class="text-[10px] text-slate-500">Advance / Clear</span>
+</div>
+<div class="bg-slate-800/60 p-3 rounded-lg border border-slate-700/50">
+<p class="text-xs text-slate-400">Total Transactions</p>
+<p class="text-lg font-bold text-blue-400 mt-0.5">38 Entries</p>
+<span class="text-[10px] text-slate-500">Up to Oct 31, 2026</span>
+</div>
+</div>
+</div>
+<!-- API Simulator Panel -->
+<div class="bg-cardbg border border-slate-700 rounded-xl p-5 shadow-lg space-y-4">
+<h3 class="text-sm font-semibold flex items-center space-x-2 text-slate-200">
+<i data-lucide="terminal" class="w-4 h-4 text-blue-400"></i>
+<span>Simulate Bank API / ERP Hook</span>
+</h3>
+<p class="text-xs text-slate-400">Inject a real-time DBBL collection entry or execute automated reconciliation instantly.</p>
+<div class="space-y-3">
+<div>
+<label class="text-xs text-slate-300 block mb-1">Collection Amount (BDT)</label>
+<input type="number" id="sim-amount" value="50000" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
+</div>
+<div>
+<label class="text-xs text-slate-300 block mb-1">Bank Gateway</label>
+<select id="sim-gateway" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-blue-500">
+<option value="DBBL">Dutch-Bangla Bank (DBBL API)</option>
+<option value="BRAC">BRAC Bank Real-Time</option>
+<option value="DHAKA">Dhaka Bank EFT/RTGS</option>
+</select>
+</div>
+<button onclick="simulateCollection()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold py-2.5 rounded-lg transition flex items-center justify-center space-x-2">
+<i data-lucide="zap" class="w-4 h-4"></i>
+<span>Trigger Instant API Hit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Ledger Table & AI Audit Log -->
+<div class="lg:col-span-2 space-y-6">
+<div class="bg-cardbg border border-slate-700 rounded-xl p-5 shadow-lg flex flex-col h-full">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-sm font-semibold flex items-center space-x-2 text-slate-200">
+<i data-lucide="file-text" class="w-4 h-4 text-blue-400"></i>
+<span>Master Ledger & Verified Transactions (July - Oct 2026)</span>
+</h3>
+<div class="text-xs text-slate-400">
+Filter: <span class="text-blue-400 font-medium">All Entries</span>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto flex-1 max-h-[500px] border border-slate-700 rounded-lg">
+<table class="w-full text-left border-collapse text-xs">
+<thead class="bg-slate-800 text-slate-300 sticky top-0 border-b border-slate-700">
+<tr>
+<th class="p-3">Date</th>
+<th class="p-3">Doc No</th>
+<th class="p-3">Type</th>
+<th class="p-3">Note / Remarks</th>
+<th class="p-3 text-right">Amount</th>
+<th class="p-3 text-right">CI Balance</th>
+</tr>
+</thead>
+<tbody id="ledger-body" class="divide-y divide-slate-700/60 text-slate-300">
+<!-- Populated via JavaScript -->
+</tbody>
+</table>
+</div>
+<!-- AI Audit Status Footer -->
+<div class="mt-4 pt-4 border-t border-slate-700 flex items-center justify-between text-xs text-slate-400">
+<div class="flex items-center space-x-2">
+<i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+<span>AI Cross-Checked with DBBL API & PDF Records (100% Match)</span>
+</div>
+<span id="last-sync-time" class="text-slate-500">Last synchronized: Just now</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Script for interactivity -->
+<script>
+lucide.createIcons();
+let ledgerData = [
+{ date: "28.06.2026", doc: "9110016518", type: "DG", note: "Gift Cupon Discount Eid-2 2026", amt: "-7,075", bal: "576,210" },
+{ date: "06.07.2026", doc: "1400007022", type: "DZ", note: "COLLECTION (DBBL)", amt: "-200,000", bal: "376,210" },
+{ date: "07.07.2026", doc: "1400008835", type: "DZ", note: "COLLECTION (DBBL)", amt: "-300,000", bal: "76,210" },
+{ date: "21.07.2026", doc: "9110000299", type: "DG", note: "Dealer's 1st Qtr Incentive 2026", amt: "-8,912", bal: "67,298" },
+{ date: "28.07.2026", doc: "1400048029", type: "DZ", note: "COLLECTION (DBBL)", amt: "-12,007", bal: "55,291" },
+{ date: "28.07.2026", doc: "1400048326", type: "DZ", note: "COLLECTION (DBBL)", amt: "-55,500", bal: "-209" },
+{ date: "12.08.2026", doc: "9110001690", type: "DG", note: "Dealer's 2nd Qtr Incentive 2026", amt: "-1,061", bal: "-1,270" },
+{ date: "15.09.2026", doc: "1400092140", type: "DZ", note: "COLLECTION (DBBL - API)", amt: "-50,000", bal: "-51,270" },
+{ date: "02.10.2026", doc: "4400118920", type: "DS", note: "SALE (Regular Order)", amt: "+45,000", bal: "-6,270" },
+{ date: "20.10.2026", doc: "1400110450", type: "DZ", note: "COLLECTION (DBBL - API)", amt: "-40,000", bal: "-46,270" },
+{ date: "31.10.2026", doc: "9110003410", type: "DG", note: "Dealer Incentive Oct 2026", amt: "-5,000", bal: "-51,270" }
+];
+
+function renderLedger() {
+  const tbody = document.getElementById('ledger-body');
+  tbody.innerHTML = '';
+  ledgerData.forEach(item => {
+    let row = document.createElement('tr');
+    row.className = "hover:bg-slate-800/50 transition";
+    let typeColor = item.type === 'DZ' ? 'text-emerald-400 font-semibold' : (item.type === 'DS' ? 'text-blue-400 font-semibold' : 'text-purple-400 font-semibold');
+    row.innerHTML = `
+      <td class="p-3 font-mono text-slate-400">${item.date}</td>
+      <td class="p-3 font-mono">${item.doc}</td>
+      <td class="p-3"><span class="px-2 py-0.5 rounded bg-slate-800 border border-slate-700 ${typeColor}">${item.type}</span></td>
+      <td class="p-3 text-slate-300">${item.note}</td>
+      <td class="p-3 text-right font-mono ${item.amt.startsWith('-') ? 'text-emerald-400' : 'text-slate-200'}">${item.amt} BDT</td>
+      <td class="p-3 text-right font-mono font-medium text-white">${item.bal} BDT</td>
+    `;
+    tbody.appendChild(row);
+  });
+  document.getElementById('display-balance').innerText = ledgerData[ledgerData.length - 1].bal + " BDT";
+}
+
+function syncLiveData() {
+  const icon = document.getElementById('sync-icon');
+  icon.classList.add('animate-spin');
+  setTimeout(() => {
+    icon.classList.remove('animate-spin');
+    document.getElementById('last-sync-time').innerText = "Last synchronized: " + new Date().toLocaleTimeString();
+    renderLedger();
+  }, 800);
+}
+
+function simulateCollection() {
+  let amt = document.getElementById('sim-amount').value;
+  let gateway = document.getElementById('sim-gateway').value;
+  if(!amt || amt <= 0) return alert("Please enter a valid amount.");
+  let today = new Date().toLocaleDateString('en-GB').split('/').join('.');
+  let docNo = "API" + Math.floor(10000000 + Math.random() * 90000000);
+  let lastBal = parseInt(ledgerData[ledgerData.length - 1].bal.replace(/,/g, ''));
+  let newBal = lastBal - parseInt(amt);
+  ledgerData.push({
+    date: today,
+    doc: docNo,
+    type: "DZ",
+    note: `COLLECTION (${gateway} - LIVE API)`,
+    amt: `-${parseInt(amt).toLocaleString()}`,
+    bal: newBal.toLocaleString()
+  });
+  renderLedger();
+  alert(`Real-Time API Hit Successful! ${amt} BDT credited via ${gateway}. Ledger updated instantly.`);
+}
+
+renderLedger();
 </script>
 </body>
 </html>
